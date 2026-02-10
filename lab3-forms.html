@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 3 - Coffee Order Form</title>
+</head>
+<body>
+
+  <h1>Coffee Order Form</h1>
+
+  <form action="https://www.w3schools.com/action_page.php" method="get">
+
+    <!-- Customer Name -->
+    <label for="customerName">Customer Name:</label><br>
+    <input type="text" id="customerName" name="customerName" required><br><br>
+
+    <!-- Email Address -->
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Coffee Type -->
+    <label for="coffeeType">Coffee Type:</label><br>
+    <select id="coffeeType" name="coffeeType" required>
+      <option value="">-- Select a coffee --</option>
+      <option value="Latte">Latte</option>
+      <option value="Cappuccino">Cappuccino</option>
+      <option value="Americano">Americano</option>
+      <option value="Espresso">Espresso</option>
+    </select><br><br>
+
+    <!-- Size (radio buttons) -->
+    <p>Size:</p>
+    <input type="radio" id="small" name="size" value="Small" required>
+    <label for="small">Small</label><br>
+
+    <input type="radio" id="medium" name="size" value="Medium">
+    <label for="medium">Medium</label><br>
+
+    <input type="radio" id="large" name="size" value="Large">
+    <label for="large">Large</label><br><br>
+
+    <!-- Extras (checkboxes) -->
+    <p>Extras:</p>
+    <input type="checkbox" id="whippedCream" name="extras" value="Whipped Cream">
+    <label for="whippedCream">Whipped Cream</label><br>
+
+    <input type="checkbox" id="extraShot" name="extras" value="Extra Shot">
+    <label for="extraShot">Extra Shot</label><br>
+
+    <input type="checkbox" id="almondMilk" name="extras" value="Almond Milk">
+    <label for="almondMilk">Almond Milk</label><br><br>
+
+    <!-- Special Instructions -->
+    <label for="instructions">Special Instructions:</label><br>
+    <textarea id="instructions" name="instructions" rows="4" cols="40"
+      placeholder="Any special requests?"></textarea><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Order</button>
+
+  </form>
+
+</body>
+</html>
